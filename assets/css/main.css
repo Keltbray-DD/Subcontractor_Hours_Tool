@@ -443,7 +443,7 @@ input[type="submit"]:active {
         flex-wrap: wrap;
         gap: 20px;
         padding: 20px;
-        max-width: 780px;
+        max-width: 900px;
         margin: auto;
       }
       .container {
@@ -512,3 +512,19 @@ input[type="submit"]:active {
       th {
         background-color: #f2f2f2;
       }
+      .delete-btn, .edit-btn {
+        cursor: pointer;
+        color: #0056b3;
+        background-color:transparent;
+        border-width:0 ;
+      }
+      .delete-btn:hover, .edit-btn:hover {
+        cursor: pointer;
+        color: #026fe4;
+        background-color:transparent;
+      }
+      .editing {
+        background-color: #f2f2f2; /* Grey background */
+        color: #888; /* Grey text color */
+    }
+    

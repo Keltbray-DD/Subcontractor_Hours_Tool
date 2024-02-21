@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./assets/css/main.css">
+<script src="./js/main.js"></script>
+<title>Construction Record Form</title>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx-populate/1.21.0/xlsx-populate.min.js"></script>
+
+
+<style>
+
+</style>
+</head>
+<body>
+<header>
+    <div class="header-section">
+        <img alt="" id="headerlogo" class="logo_H" src="./assets/media/Keltbray-logo_single.png">
+        <h2>Keltbray <br>DD Hub</h2>
+    </div>
+    <div class="header-section">
+        <h1>Subcontractor Hours Record Form</h1>
+    </div>
+    <div class="header-section">
+        <h3></h3>
+    </div>
+</header>
+
+
+<div id="container">
+    <div class="container">
+        <label for="contractNumber">Contract Number:</label>
+        <input type="text" id="contractNumber" placeholder="Enter contract number"><br>
+    </div>
+  <div id="form">
+    <h3>Add Record</h3>
+    <label for="company">Company:</label>
+    <input type="text" id="company" placeholder="Enter company name"><br>
+    <label for="name">Operative Name:</label>
+    <input type="text" id="name" placeholder="Enter operative name"><br>
+    <label for="hours">Hours Worked:</label>
+    <input type="number" id="hours" placeholder="Enter hours worked"><br>
+    <label for="type">Type:</label>
+    <select id="type">
+      <option value="SC">Sub Con</option>
+      <option value="LO">Labour Only</option>
+      <option value="DL">Delivery</option>
+      <option value="VI">Visitor</option>
+    </select><br>
+    <label for="wc">W.C:</label>
+    <input type="date" id="wc"><br>
+    <button class="addbutton" onclick="addRecord()">Add Record</button>
+  </div>
+
+  <div id="records">
+    <h3>Records</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Company</th>
+          <th>Operative Name</th>
+          <th>Hours Worked</th>
+          <th>Type</th>
+          <th>W.C</th>
+        </tr>
+      </thead>
+      <tbody id="recordsBody"></tbody>
+    </table>
+  </div>
+</div>
+
+<hr>
+
+<button class="exportbutton" onclick="exportToExcel()">Export to Excel</button>
+
+<script>
+
+
+
+</script>
+
+</body>
+</html>
